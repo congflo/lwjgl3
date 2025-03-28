@@ -592,7 +592,7 @@ public final class GLCapabilities {
         glUniformMatrix4x3fv;
 
     // GL30
-    public final long
+    //public final long
         glGetStringi,
         glClearBufferiv,
         glClearBufferuiv,
@@ -777,7 +777,7 @@ public final class GLCapabilities {
         glVertexAttribP4uiv;
 
     // GL40
-    public final long
+    //public final long
         glBlendEquationi,
         glBlendEquationSeparatei,
         glBlendFunci,
