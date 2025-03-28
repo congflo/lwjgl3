@@ -38,7 +38,7 @@ fi
 # Download libraries
 #POJAV_NATIVES="https://github.com/PojavLauncherTeam/PojavLauncher_iOS/raw/main/Natives/resources/Frameworks"
 #wget -nc $POJAV_NATIVES/libopenal.so -P $LWJGL_NATIVE/openal
-wget -nc "https://nightly.link/PojavLauncherTeam/shaderc/workflows/ios/main/libshaderc.zip"
+wget -nc "https://github.com/congflo/shaderc/releases/download/v2025.3/libshaderc.zip"
 unzip -o libshaderc.zip -d $LWJGL_NATIVE/shaderc
 rm $LWJGL_NATIVE/shaderc/libshaderc_shared.1.dylib
 mv $LWJGL_NATIVE/shaderc/libshaderc_shared.dylib $LWJGL_NATIVE/shaderc/libshaderc.dylib
@@ -83,7 +83,7 @@ yes | ant -Dplatform.macos=true \
   -Dbinding.xxhash=false \
   -Dbinding.yoga=false \
   -Dbinding.zstd=false \
-  -Dbuild.type=release/3.3.3 \
+  #-Dbuild.type=release/3.3.3 \
   -Djavadoc.skip=true \
   -Dnashorn.args="--no-deprecation-warning" \
   compile compile-native release
